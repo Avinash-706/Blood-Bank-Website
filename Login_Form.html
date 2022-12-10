@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: radial-gradient(circle, #95b7e9, #84c9e4, #96d6d4, #b8ddc8, #dbe3c9);
+        }
+
+        .nav {
+            border: 2px solid black;
+            font-size: 50px;
+            text-align: center;
+            background-image: linear-gradient(to right top, #d16ba5, #dc6197, #e45787, #eb4d75, #ee4660, #ed4e52, #ea5744, #e56136, #dd7432, #d58534, #cc933c, #c3a049);
+        }
+
+        #log {
+            font-size: 30px;
+            color: rgba(1, 1, 31, 0.724);
+            text-align: center;
+        }
+
+        .form {
+            margin-left: 450px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .form input:hover {
+            color: rgb(206, 177, 79);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        #a {
+            margin-left: 65px;
+        }
+
+        #b {
+            margin-left: 76px;
+        }
+
+        #c {
+            margin-left: 24px;
+        }
+
+        #d {
+            margin-left: 0px;
+        }
+
+        #e {
+            margin-left: 65px;
+        }
+
+        #i {
+            margin: 18px 85px;
+        }
+
+        .img_01 {
+            background: url('blooddonation-01.webp') no-repeat;
+            background-size: cover;
+            height: 800px;
+            margin-top: -30px;
+        }
+    </style>
+</head>
+<script>
+    function print(a) {
+        window.alert("Form Submitted Successfully")
+    }
+</script>
+
+<body>
+    <div class="nav">
+        <p>BLOOD DOT</p>
+    </div>
+    <div class="img_01">
+        <br>
+        <br>
+        <div class="sign">
+            <p id="log">Login Form</p>
+        </div>
+        <br>
+        <div class="form">
+            <form>
+                Name : <input type="text" name="FirstName" id="a"><br>
+                Age : <input type="number" name="FirstName" id="b"><br>
+                Blood Group :<select name="dropdown" id="c"><br>
+                    <option value="Select" selected>Select</option>
+                    <option value="A">A</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B">B</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB">AB</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O">O</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select><br>
+                Aadhar Number : <input type="number" id="d" name="FirstName"><br>
+                Mobile Number : <input type="number" name="FirstName"><br>
+                Email : <input type="email" name="FirstName" id="e"><br>
+                <input type="reset" value="Submit" id="i" onclick="print()">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
